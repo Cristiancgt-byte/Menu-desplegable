@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif; /*fuente principal para la pagina web*/
+    margin: 0;
+    padding: 0;
+    background-color: #f4eeee;/*color de fondo que va a tener la pagina*/
+}
+
+
+.menucss {
+    background-color: #333;/*color de fondo del menu de navegacion*/
+    padding: 10px 0px;/*espacio que deja en la parte de arriba y abajo del menu*/
+    position: 0;/*hace que cuando giremos la rueda del mouse el menu se quede arriba lo contrario que con sticky*/
+    top: 0;/*posiciona el menu en la parte de arriba*/
+    width: 100%;/*ocupa todo el ancho de la pagina*/
+    z-index: 1000;/*hace que el menu este por encima de otros elemntos dentro de la pagina*/
+}
+
+
+.menucss ul {
+    list-style: none;/*elimina los estilos de listas */
+    display: flex;/*alinea los elementos*/
+    justify-content: center;/*centra los elemntos*/
+    padding: 0;
+    margin: 0;
+}
+
+.menucss ul li {
+    margin: 0 20px; /*define el esapcio horizontal que va a tener cada elemento dentro del menu*/
+}
+
+.menucss ul li a {
+    color: rgb(230, 238, 231);/*color del texto de el menu*/
+    text-decoration: none;/*Elimina el subrayado que tiene los enlaces*/
+    font-size: 18px;
+    padding: 10px 15px;/*espacio interno de los enlaces*/
+    transition: background 0.3s, color 0.3s;/*transicion que tarda 0.3s al momento de cambiar de color*/
+    border-radius: 10px;/*bordes redondeados en los enlaces*/
+}
+
+.menucss ul li a:hover {
+    background-color: #2dad42;/*color que toma el fondo en el momento en que se pasa el mouse sobre los enlaces*/
+    color: #f5eded;/*color que toma el texto en el momento en que se pasa el mouse encima de los enlaces*/
+}
+
+section {
+    padding: 20px 20px;/*espacio interno de cada seccion*/
+    text-align: start;/*alinea el texto a la parte izquierda*/
+}
+
+img {
+    width: 250px;/*ancho que toman todas las imagenes*/
+    height: 210px;/*alto que toman todas las imagenes*/
+    transition: transform 0.5s;/*transicion que pasa cuando se pone el mouse encima de las imagenes*/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 5);/*sombre alrededor de las imagenes*/
+}
+
+img:hover {
+    transform: scale(1.1);/*aumenta un poco el tamaño al pasar el mouse por la imagenes*/
+}
+
+table {
+    width: 90%;/*la tabla ocupa el 90% del ancho disponible*/
+    margin: 20px auto;/*centra la tabla de forma horizontal*/
+    border-collapse: separate;/*separa los bordes de la tabla*/
+    background: white;/*fondo de la tabla*/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 5);/*sombre alrededor de la tabla*/
+    border-radius: 5px;/*bordes redondeados de la tabla*/
+    overflow: hidden;/*oculta el desbordamiento del contenido*/
+}
+
+table, th, td {
+    border: 1px solid #ddd;/*borde de las celdas*/
+}
+
+th, td {
+    padding: 15px;  /* Espaciado interno en las celdas */
+    text-align: left;  /* Alineación del texto en las celdas */
+}
+
+th {
+    background-color: #444;  /* Color de fondo de los encabezados */
+    color: white;  /* Color del texto en los encabezados */
+    text-transform: uppercase;  /* Convierte el texto en mayúsculas */
+}
+
+td img {
+    width: 225px;  /* Ancho de las imágenes dentro de la tabla */
+    height: auto;  /* Mantiene la proporción de la imagen */
+    display: block;
+    margin: auto;  /* Centra las imágenes dentro de las celdas */
+}
+
