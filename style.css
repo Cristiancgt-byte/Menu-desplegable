@@ -9,7 +9,7 @@ body {
 .menucss {
     background-color: #333;/*color de fondo del menu de navegacion*/
     padding: 10px 0px;/*espacio que deja en la parte de arriba y abajo del menu*/
-    position: sticky;/*hace que cuando giremos la rueda del mouse el menu se quede arriba lo contrario que con sticky*/
+    position: 0;/*hace que cuando giremos la rueda del mouse el menu se quede arriba lo contrario que con sticky*/
     top: 0;/*posiciona el menu en la parte de arriba*/
     width: 100%;/*ocupa todo el ancho de la pagina*/
     z-index: 1000;/*hace que el menu este por encima de otros elemntos dentro de la pagina*/
